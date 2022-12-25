@@ -81,12 +81,15 @@ main {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   justify-content: space-around;
 
    border: 1px solid black;
 }
 
 .right-side-content .create-account {
    font-size: 2rem;
+   margin-bottom: 2rem;
+
 }
 
 .right-side-content .first-row,
@@ -107,6 +110,26 @@ main {
 .third-row div:last-child {
    display: flex;
    flex-direction: column;
+}
+
+input[type="text"] {
+   height: 2rem;
+   width: 12rem;
+}
+
+input[type="email"] {
+   height: 2rem;
+   width: 12rem;
+}
+
+input[type="password"] {
+   height: 2rem;
+   width: 12rem;
+}
+
+button {
+   height: 2rem;
+   width: 12rem;
 }
 
 .circle {
