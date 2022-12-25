@@ -51,18 +51,17 @@ header .right-header {
 
 header .co {
    font-weight: 900;
-   font-size: 1.875rem;
-   line-height: 2.25rem;
+   /* font-size: 1.875rem;
+   line-height: 2.25rem; */
+
+   font-size: 2.25rem; /* 36px */
+line-height: 2.5rem; /* 40px */
 }
 
 header p {
    font-size: 0.75rem;
    line-height: 1rem;
    font-weight: 500;
-
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
 }
 
 main {
@@ -128,17 +127,17 @@ main .right-content .create-an-account {
 
 input[type="text"] {
    height: 2rem;
-   width: 12rem;
+   width: 13rem;
 }
 
 input[type="email"] {
    height: 2rem;
-   width: 12rem;
+   width: 13rem;
 }
 
 input[type="password"] {
    height: 2rem;
-   width: 12rem;
+   width: 13rem;
 }
 
 button {
