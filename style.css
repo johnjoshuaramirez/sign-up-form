@@ -113,6 +113,7 @@ body {
 }
 
 input {
+   padding-left: .375rem;
    background-color: black;
    border: 1px solid white;
 }
