@@ -112,6 +112,7 @@ body {
    flex-direction: column;
 }
 
+
 input {
    padding-left: .375rem;
    background-color: black;
@@ -120,7 +121,7 @@ input {
 
 input:focus { 
    outline: none !important;
-   border-color:rgba(230, 100, 100, 0.671);;
+   border-color:rgba(230, 100, 100, 0.671);
 }
 
 input[name="first-name"],
@@ -146,6 +147,7 @@ input[type="password"] {
 
 input[type="checkbox"] {
    margin-top: 1rem;
+   accent-color: rgb(230, 100, 100);
 }
 
 button {
