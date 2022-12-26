@@ -36,13 +36,13 @@ body {
 }
 
 .left-content .welcome-page {
-   height: auto;
+   height: 100%;
    margin-top: 2rem;
 
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
 
    border: 1px solid white;
 }
@@ -56,11 +56,10 @@ body {
 
 .right-content {
    width: auto;
+   margin: 0 auto;
 
    display: flex;
    flex-direction: column;
-
-   margin: 0 auto;
 }
 
 .right-content .header {
@@ -74,16 +73,9 @@ body {
 
 .right-content .co {
    font-weight: 700;
-   /* font-size: 1.875rem;
-   line-height: 2.25rem; */
-
    font-size: 2.25rem;
-   /* 36px */
    line-height: 2.5rem;
-   /* 40px */
-
    color: rgb(230, 100, 100);
-
 }
 
 .right-content p {
