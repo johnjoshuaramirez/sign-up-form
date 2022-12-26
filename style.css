@@ -116,6 +116,17 @@ body {
    flex-direction: column;
 }
 
+input {
+   background-color: black;
+   border: 1px solid white;
+}
+
+input[name="first-name"],
+input[name="email"],
+input[name="password"] {
+   margin-right: 2rem;
+}
+
 input[type="text"] {
    height: 2rem;
    width: 13rem;
@@ -143,14 +154,9 @@ button {
 }
 
 label {
-   /* font-size: 0.875rem;
-   line-height: 1.25rem; */
-
-
    font-size: 0.75rem;
    line-height: 1rem;
    font-weight: 500;
-
 }
 
 label+input {
