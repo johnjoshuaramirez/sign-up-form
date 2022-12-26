@@ -42,7 +42,7 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-evenly;
 
    border: 1px solid white;
 }
@@ -200,27 +200,21 @@ div[class^="circle"] {
 
 .circle1 {
    position: relative;
-   width: 300px;
-   height: 300px;
+   width: 325px;
+   height: 325px;
    background-color: rgba(128, 128, 128, 0.164)
 }
 
 .circle2 {
-   transform: translate(10%, 10%);
-   width: 250px;
-   height: 250px;
+   transform: translate(9%, 9%);
+   width: 275px;
+   height: 275px;
    background-color: rgba(255, 0, 0, 0.295);
 }
 
 .circle3 {
-   transform: translate(12.5%, 13%);
-   width: 200px;
-   height: 200px;
+   transform: translate(11%, 12%);
+   width: 225px;
+   height: 225px;
    background-color: rgba(230, 100, 100, 0.671);
 }
-
-/* .circle {
-   height: 300px;
-   width: 300px;
-   border: 1px solid white;
-} */
