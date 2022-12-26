@@ -18,60 +18,15 @@ body {
    border: 1px solid black;
 }
 
-header {
-   height: 100px;
-   width: 100%;
 
+.container {
    display: flex;
-
-   border: 1px solid black;
-}
-
-header .left-header {
-   width: 50%;
-
-   display: flex;
-   justify-content: center;
-}
-
-header .left-header .square {
-   height: 100px;
-   width: 45px;
-   border: 1px solid black;
-}
-
-header .right-header {
-   width: 50%;
-   top: 7px;
-
-   display: flex;
-   /* justify-content: space-between; */
-   align-items: center;
-}
-
-header .co {
-   font-weight: 900;
-   /* font-size: 1.875rem;
-   line-height: 2.25rem; */
-
-   font-size: 2.25rem; /* 36px */
-line-height: 2.5rem; /* 40px */
-}
-
-header p {
-   font-size: 0.75rem;
-   line-height: 1rem;
-   font-weight: 500;
-}
-
-main {
-   display: flex;
-   justify-content: space-evenly;
+   justify-content: flex-start;
    flex-grow: 1;
 }
 
-main .left-content {
-   width: 50%;
+.left-content {
+   width: 40%;
 
    display: flex;
    flex-direction: column;
@@ -80,25 +35,52 @@ main .left-content {
    border: 1px solid black;
 }
 
-main h1 {
+.left-content h1 {
    font-weight: 900;
    font-size: 2.25rem;
    line-height: 2.5rem;
    padding-bottom: 8px;
 }
 
-main .right-content {
-   width: 50%;
+.right-content {
+   width: auto;
 
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
-   /* justify-content: space-around; */
+
+   margin: 0 auto;
 
    border: 1px solid black;
 }
 
-main .right-content .create-an-account {
+.right-content .header {
+   width: auto;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   border: 1px solid black;
+}
+
+.right-content .co {
+   font-weight: 700;
+   /* font-size: 1.875rem;
+   line-height: 2.25rem; */
+
+   font-size: 2.25rem;
+   /* 36px */
+   line-height: 2.5rem;
+   /* 40px */
+}
+
+.right-content p {
+   font-size: 0.75rem;
+   line-height: 1rem;
+   font-weight: 500;
+}
+
+.right-content .create-an-account {
    font-weight: 900;
    font-size: 1.875rem;
    line-height: 2.25rem;
@@ -170,7 +152,7 @@ label+input {
 }
 
 input:last-child {
-   margin-right: 1.75rem;
+   /* margin-right: 1.75rem; */
 }
 
 button {
@@ -183,6 +165,12 @@ footer {
    line-height: 1rem;
    font-weight: 500;
    margin-top: 3rem;
+}
+
+.square {
+   height: 100px;
+   width: 45px;
+   border: 1px solid black;
 }
 
 .circle {
