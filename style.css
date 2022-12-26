@@ -31,8 +31,6 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-
-   border: 1px solid white;
 }
 
 .left-content .welcome-page {
@@ -43,8 +41,6 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: space-evenly;
-
-   border: 1px solid white;
 }
 
 .left-content h1 {
@@ -187,10 +183,7 @@ footer {
 .square {
    height: 120px;
    width: 45px;
-   /* margin-bottom: auto; */
-
    background-color: rgb(230, 100, 100);
-
 }
 
 div[class^="circle"] {
