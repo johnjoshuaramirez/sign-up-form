@@ -7,15 +7,17 @@
    font-family: poppins, sans-serif;
    -webkit-font-smoothing: auto;
    -moz-osx-font-smoothing: auto;
+   color: white;
 }
 
 body {
    min-height: 100vh;
+   background-color: black;
 
    display: flex;
    flex-direction: column;
 
-   border: 1px solid black;
+   border: 1px solid white;
 }
 
 
@@ -32,7 +34,7 @@ body {
    flex-direction: column;
    align-items: center;
 
-   border: 1px solid black;
+   border: 1px solid white;
 }
 
 .left-content h1 {
@@ -50,7 +52,7 @@ body {
 
    margin: 0 auto;
 
-   border: 1px solid black;
+   border: 1px solid white;
 }
 
 .right-content .header {
@@ -60,7 +62,7 @@ body {
    justify-content: space-between;
    align-items: center;
 
-   border: 1px solid black;
+   border: 1px solid white;
 }
 
 .right-content .co {
@@ -72,12 +74,19 @@ body {
    /* 36px */
    line-height: 2.5rem;
    /* 40px */
+
+   color: rgb(230, 100, 100);
+   
 }
 
 .right-content p {
    font-size: 0.75rem;
    line-height: 1rem;
    font-weight: 500;
+}
+
+.right-content a {
+   color: rgb(230, 100, 100);
 }
 
 .right-content .create-an-account {
@@ -127,8 +136,10 @@ input[type="checkbox"] {
 }
 
 button {
-   height: 2rem;
+   height: 2.25rem;
    width: 12rem;
+
+   background-color: rgb(230, 100, 100);
 }
 
 label {
@@ -168,13 +179,15 @@ footer {
 }
 
 .square {
-   height: 100px;
+   height: 120px;
    width: 45px;
-   border: 1px solid black;
+
+   background-color: rgb(230, 100, 100);
+
 }
 
 .circle {
    height: 300px;
    width: 300px;
-   border: 1px solid black;
+   border: 1px solid white;
 }
