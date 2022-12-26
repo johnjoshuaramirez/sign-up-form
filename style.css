@@ -16,8 +16,6 @@ body {
 
    display: flex;
    flex-direction: column;
-
-   border: 1px solid white;
 }
 
 
@@ -37,6 +35,18 @@ body {
    border: 1px solid white;
 }
 
+.left-content .welcome-page {
+   height: auto;
+   margin-top: 2rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+
+   border: 1px solid white;
+}
+
 .left-content h1 {
    font-weight: 900;
    font-size: 2.25rem;
@@ -51,18 +61,15 @@ body {
    flex-direction: column;
 
    margin: 0 auto;
-
-   border: 1px solid white;
 }
 
 .right-content .header {
    width: auto;
+   height: 120px;
 
    display: flex;
    justify-content: space-between;
    align-items: center;
-
-   border: 1px solid white;
 }
 
 .right-content .co {
@@ -76,7 +83,7 @@ body {
    /* 40px */
 
    color: rgb(230, 100, 100);
-   
+
 }
 
 .right-content p {
@@ -94,6 +101,7 @@ body {
    font-size: 1.875rem;
    line-height: 2.25rem;
    margin-bottom: 2rem;
+   margin-top: 2rem;
 }
 
 .right-content .first-row,
@@ -187,13 +195,40 @@ footer {
 .square {
    height: 120px;
    width: 45px;
+   /* margin-bottom: auto; */
 
    background-color: rgb(230, 100, 100);
 
 }
 
-.circle {
+div[class^="circle"] {
+   border-radius: 50%;
+   /* border: 1px solid red; */
+}
+
+.circle1 {
+   position: relative;
+   width: 300px;
+   height: 300px;
+   background-color: rgba(128, 128, 128, 0.164)
+}
+
+.circle2 {
+   transform: translate(10%, 10%);
+   width: 250px;
+   height: 250px;
+   background-color: rgba(255, 0, 0, 0.295);
+}
+
+.circle3 {
+   transform: translate(12.5%, 13%);
+   width: 200px;
+   height: 200px;
+   background-color: rgba(230, 100, 100, 0.671);
+}
+
+/* .circle {
    height: 300px;
    width: 300px;
    border: 1px solid white;
-}
+} */
