@@ -14,6 +14,7 @@
 }
 
 body {
+   position: relative;
    min-height: 100vh;
    background-color: black;
 
@@ -30,6 +31,7 @@ body {
 
 .left-content {
    width: 40%;
+   position: relative;
 
    display: flex;
    flex-direction: column;
@@ -114,7 +116,6 @@ body {
    display: flex;
    flex-direction: column;
 }
-
 
 input {
    background-color: black;
@@ -208,4 +209,31 @@ div[class^="circle"] {
    width: 225px;
    height: 225px;
    background-color: rgba(230, 100, 100, 0.671);
+}
+
+.dot-container-one {
+   position: absolute;
+   top: 5rem;
+   right: 28rem;
+
+   display: flex;
+}
+
+/* .dot-container-two {
+   position: absolute;
+   top: 4rem;
+   left: 27rem;
+   display: flex;
+} */
+
+.dot-group {
+   margin-right: 7px;
+}
+
+.dot {
+   height: 9px;
+   width: 9px;
+   margin-bottom: 7px;
+   border-radius: 50%;
+   background-color: rgba(128, 128, 128, 0.308);
 }
