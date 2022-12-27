@@ -224,7 +224,7 @@ div[class^="circle"] {
 .dot-container-two {
    position: absolute;
    bottom: 3rem;
-   left: 30rem;
+   right: 1rem;
    display: flex;
 }
 
