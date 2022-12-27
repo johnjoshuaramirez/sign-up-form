@@ -56,6 +56,7 @@ body {
 }
 
 .right-content {
+   position: relative;
    margin: 0 auto;
    width: auto;
 
@@ -126,6 +127,7 @@ input {
 input:focus { 
    border-color:rgba(230, 100, 100, 0.671);
    outline: none !important;
+   
 }
 
 input[name="first-name"],
@@ -219,12 +221,27 @@ div[class^="circle"] {
    display: flex;
 }
 
-/* .dot-container-two {
+.dot-container-two {
+   position: absolute;
+   bottom: 3rem;
+   left: 30rem;
+   display: flex;
+}
+
+.dot-container-three {
    position: absolute;
    top: 4rem;
-   left: 27rem;
+   right: 0.125rem;
+
    display: flex;
-} */
+}
+
+.dot-container-four {
+   position: absolute;
+   top: 7rem;
+   right: 0.125rem;
+   display: flex;
+}
 
 .dot-group {
    margin-right: 7px;
