@@ -248,9 +248,52 @@ div[class^="circle"] {
 }
 
 .dot {
+   opacity: 0.4;
    height: 9px;
    width: 9px;
    margin-bottom: 7px;
    border-radius: 50%;
    background-color: rgba(128, 128, 128, 0.308);
 }
+
+.up-arrow-group {
+   position: absolute;
+   bottom: 15rem;
+   right: 2.5rem;
+}
+
+.up-arrow {
+   opacity: 0.4;
+   margin-bottom: 0.25rem;
+   transform: rotate(-135deg);
+
+   border: solid rgba(128, 128, 128, 0.308);
+   border-width: 0 5px 5px 0;
+   padding: 4px;
+
+   height: 0.9rem;
+   width: 0.9rem;
+}
+
+.right-arrow-group {
+   position: absolute;
+   top: 13rem;
+   right: 0.5rem;
+
+   display: flex;
+}
+
+.right-arrow {
+   opacity: 0.4;
+   margin-right: 0.25rem;
+   transform: rotate(-45deg);
+
+   border: solid rgba(128, 128, 128, 0.308);
+   border-width: 0 5px 5px 0;
+   padding: 4px;
+
+   height: 0.9rem;
+   width: 0.9rem;
+}
+
+

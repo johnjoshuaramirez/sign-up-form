@@ -2,7 +2,7 @@ const firstName = document.querySelector("#first-name");
 const leftContent = document.querySelector(".left-content");
 const rightContent = document.querySelector(".right-content");
 
-function createOverlayOne(number) {
+function createCirclesOne(number) {
 	let dot_container = document.createElement("div");
 
 	for (let i = 0; i < 3; i++) {
@@ -23,7 +23,7 @@ function createOverlayOne(number) {
 	leftContent.appendChild(dot_container);
 }
 
-function createOverlayTwo(number, element) {
+function createCirclesTwo(number, element) {
 	let dot_container = document.createElement("div");
 
 	for (let i = 0; i < 6; i++) {
@@ -44,11 +44,41 @@ function createOverlayTwo(number, element) {
 	element.appendChild(dot_container);
 }
 
+function createUpArrows() {
+   const arrow_group = document.createElement("div");
+
+   for (let i= 0; i < 5; i++) {
+      const arrow = document.createElement("div");
+
+      arrow.classList.add("up-arrow");
+      arrow_group.appendChild(arrow);
+   }
+
+   arrow_group.classList.add("up-arrow-group");
+   leftContent.appendChild(arrow_group);
+}
+
+
+function createRightArrows() {
+   const arrow_group = document.createElement("div");
+
+   for (let i= 0; i < 5; i++) {
+      const arrow = document.createElement("div");
+
+      arrow.classList.add("right-arrow");
+      arrow_group.appendChild(arrow);
+   }
+
+   arrow_group.classList.add("right-arrow-group");
+   leftContent.appendChild(arrow_group);
+}
 window.addEventListener("load", () => {
 	firstName.focus();
 	firstName.select();
-	createOverlayOne("one");
-	createOverlayOne("two");
-   createOverlayTwo("three", leftContent);
-   createOverlayTwo("four", rightContent);
+	createCirclesOne("one");
+	createCirclesOne("two");
+   createCirclesTwo("three", leftContent);
+   createCirclesTwo("four", rightContent);
+   createUpArrows();
+   createRightArrows();
 });
