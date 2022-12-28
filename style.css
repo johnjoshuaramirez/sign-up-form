@@ -22,7 +22,6 @@ body {
    flex-direction: column;
 }
 
-
 .container {
    display: flex;
    justify-content: flex-start;
@@ -105,16 +104,16 @@ body {
    gap: 2rem;
 }
 
-.first-row div:first-child,
-.second-row div:first-child,
-.third-row div:first-child {
+.first-row > div:first-child,
+.second-row > div:first-child,
+.third-row > div:first-child {
    display: flex;
    flex-direction: column;
 }
 
-.first-row div:last-child,
-.second-row div:last-child,
-.third-row div:last-child {
+.first-row > div:last-child,
+.second-row > div:last-child,
+.third-row > div:last-child {
    display: flex;
    flex-direction: column;
 }
@@ -146,14 +145,14 @@ input[type="tel"] {
 
 input[type="checkbox"] {
    accent-color: var(--red);
-   margin-top: 1rem;
+   margin-top: 0.8rem;
 }
 
 input[type="submit"] {
    background-color: var(--red);
    border: none;
    height: 2.25rem;
-   margin-top: 1rem;
+   margin-top: 0.8rem;
    width: 13rem;
 
    display: block;
@@ -171,7 +170,7 @@ label+input {
 
 .second-row label,
 .third-row label {
-   margin-top: 1rem;
+   margin-top: .5rem;
 }
 
 footer {
@@ -302,5 +301,12 @@ div[class^="circle"] {
    font-weight: 295;
    flex-wrap: wrap;
    color:rgb(230, 100, 100);
+   display: none;
 }
+
+.show {
+   display: block;
+}
+
+
 

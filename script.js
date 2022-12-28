@@ -1,17 +1,29 @@
+const firstName = document.querySelector("#first-name");
+const lastName = document.querySelector("#last-name");
+const email = document.querySelector("#email");
+const number = document.querySelector("#number");
 const password = document.querySelector("#password");
-const message = document.querySelector(".message");
+const confirmPassword = document.querySelector("#confirm-password");
+const firstNameError = document.querySelector("#first-name + .message");
+const lastNameError = document.querySelector("#last-name + .message");
+const emailError = document.querySelector("#email + .message");
+const numberError = document.querySelector("#number + .message");
+const passwordError = document.querySelector("#password + .message");
+const confirmPasswordError = document.querySelector("#confirm-password + .message");
 
-const regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])(.{8,})$/g;
+error(firstName, firstNameError);
+error(lastName, lastNameError);
+error(email, emailError);
+error(number, numberError);
+error(password, passwordError);
+error(confirmPassword, confirmPasswordError);
 
-// password.addEventListener("input", validate(password.value));
+function error(input, message) {
+   input.addEventListener("blur", () => {
+      message.classList.add("show");
+   })
+}
 
-// function validate(password) {
-//    const match = regex.test(password);
-
-//    if (!match) {
-//       message.innerText = "Password must contain 8 or more characters with a mix of letters, numbers & symbols";
-//    }
-// }
 
 const leftContent = document.querySelector(".left-content");
 const rightContent = document.querySelector(".right-content");
