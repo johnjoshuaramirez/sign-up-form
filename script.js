@@ -19,10 +19,22 @@ error(password, passwordError);
 error(confirmPassword, confirmPasswordError);
 
 function error(input, message) {
-   input.addEventListener("blur", () => {
-      message.classList.add("show");
-   })
+   input.addEventListener("input", () => {
+      message.classList.remove("show");
+   
+      if (!input.value.trim().length) {
+         message.classList.add("show");
+      }
+   });
+   
+	input.addEventListener("blur", () => {
+		if (!password.value.trim().length) {
+         message.classList.add("show");
+      } 
+	});
 }
+
+
 
 
 const leftContent = document.querySelector(".left-content");
@@ -50,24 +62,24 @@ function createCircles(containerNumber, element, xlenght, ylenght) {
 }
 
 function createArrows(arrowDirection, arrowGroup) {
-   const arrow_group = document.createElement("div");
+	const arrow_group = document.createElement("div");
 
-   for (let i= 0; i < 5; i++) {
-      const arrow = document.createElement("div");
+	for (let i = 0; i < 5; i++) {
+		const arrow = document.createElement("div");
 
-      arrow.classList.add(arrowDirection);
-      arrow_group.appendChild(arrow);
-   }
+		arrow.classList.add(arrowDirection);
+		arrow_group.appendChild(arrow);
+	}
 
-   arrow_group.classList.add(arrowGroup);
-   leftContent.appendChild(arrow_group);
+	arrow_group.classList.add(arrowGroup);
+	leftContent.appendChild(arrow_group);
 }
 
 window.addEventListener("load", () => {
 	createCircles("one", leftContent, 3, 6);
 	createCircles("two", leftContent, 3, 6);
-   createCircles("three", leftContent, 6, 3);
-   createCircles("four", rightContent, 6, 3);
-   createArrows("up-arrow", "up-arrow-group");
-   createArrows("right-arrow", "right-arrow-group");
+	createCircles("three", leftContent, 6, 3);
+	createCircles("four", rightContent, 6, 3);
+	createArrows("up-arrow", "up-arrow-group");
+	createArrows("right-arrow", "right-arrow-group");
 });

@@ -60,17 +60,17 @@
 						<div>
 							<label for="password">Password</label>
 							<input type="password" name="password" id="password" required />
-                     <div class="message">Password must contain at least 8 <br>characters</div>
+                     <div class="message">Password must contain at least 8 characters</div>
 						</div>
 						<div>
 							<label for="confirm-password">Confirm Password</label>
-							<input type="password" name="confirm-password" id="confirm-password" required />
-                     <div class="message">Password did not match. <br> Try again.</div>
+							<input type="password" name="confirm-password" id="confirm-password" minlength="8" required />
+                     <div class="message">Password did not match. Try again.</div>
 						</div>
 					</div>
                <input type="checkbox" name="accept-terms-conditions" id="checkbox" required checked />
                <label for="checkbox">I Accept the <a href="">Terms & Conditions</a></label>
-               <input type="submit" value="Create Account" />
+               <input type="submit" value="Create Account" id="submit" />
 				</form>
 				<footer>Copyright 2030. Company Inc ltd</footer>
 			</div>

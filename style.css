@@ -109,7 +109,10 @@ body {
 .third-row > div:first-child {
    display: flex;
    flex-direction: column;
+   width: min-content;
 }
+
+
 
 .first-row > div:last-child,
 .second-row > div:last-child,
@@ -154,10 +157,18 @@ input[type="submit"] {
    height: 2.25rem;
    margin-top: 0.8rem;
    width: 13rem;
+   cursor: pointer;
 
    display: block;
 }
 
+input[type="submit"]:hover {
+   background-color: rgba(230, 100, 100, 0.897);
+}
+
+input[type="submit"]:focus {
+   background-color: rgba(230, 100, 100, 0.726);
+}
 label {
    font-size: 0.75rem;
    font-weight: 500;
