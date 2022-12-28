@@ -1,4 +1,3 @@
-const firstName = document.querySelector("#first-name");
 const leftContent = document.querySelector(".left-content");
 const rightContent = document.querySelector(".right-content");
 
@@ -38,8 +37,6 @@ function createArrows(arrowDirection, arrowGroup) {
 }
 
 window.addEventListener("load", () => {
-	firstName.focus();
-	firstName.select();
 	createCircles("one", leftContent, 3, 6);
 	createCircles("two", leftContent, 3, 6);
    createCircles("three", leftContent, 6, 3);
