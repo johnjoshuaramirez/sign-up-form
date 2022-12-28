@@ -10,13 +10,13 @@ const emailError = document.querySelector("#email + .message");
 const numberError = document.querySelector("#number + .message");
 const passwordError = document.querySelector("#password + .message");
 const confirmPasswordError = document.querySelector("#confirm-password + .message");
+const submit = document.querySelector("#submit");
 
 error(firstName, firstNameError);
 error(lastName, lastNameError);
 error(email, emailError);
 error(number, numberError);
 error(password, passwordError);
-error(confirmPassword, confirmPasswordError);
 
 function error(input, message) {
    input.addEventListener("input", () => {
@@ -25,17 +25,22 @@ function error(input, message) {
       if (!input.value.trim().length) {
          message.classList.add("show");
       }
+
+      if (isNaN(number.value)) {
+         numberError.classList.add("show");
+      }
    });
-   
+
 	input.addEventListener("blur", () => {
-		if (!password.value.trim().length) {
+		if (!input.value.trim().length) {
          message.classList.add("show");
       } 
+
+      if (!email.value.includes("@.")) {
+         emailError.classList.add("show");
+      }
 	});
 }
-
-
-
 
 const leftContent = document.querySelector(".left-content");
 const rightContent = document.querySelector(".right-content");
