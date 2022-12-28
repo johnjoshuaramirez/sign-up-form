@@ -1,3 +1,18 @@
+const password = document.querySelector("#password");
+const message = document.querySelector(".message");
+
+const regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*])(.{8,})$/g;
+
+// password.addEventListener("input", validate(password.value));
+
+// function validate(password) {
+//    const match = regex.test(password);
+
+//    if (!match) {
+//       message.innerText = "Password must contain 8 or more characters with a mix of letters, numbers & symbols";
+//    }
+// }
+
 const leftContent = document.querySelector(".left-content");
 const rightContent = document.querySelector(".right-content");
 

@@ -102,6 +102,7 @@ body {
 .right-content .second-row,
 .right-content .third-row {
    display: flex;
+   gap: 2rem;
 }
 
 .first-row div:first-child,
@@ -125,15 +126,15 @@ input {
 }
 
 input:focus { 
-   border: 1px solid rgba(230, 100, 100, 0.671);
+   border: 1px solid rgba(230, 100, 100);
    outline: none;
 }
 
-input[name="first-name"],
+/* input[name="first-name"],
 input[name="email"],
 input[name="password"] {
    margin-right: 2rem;
-}
+} */
 
 input[type="text"],
 input[type="email"],
@@ -295,4 +296,11 @@ div[class^="circle"] {
    width: 0.9rem;
 }
 
+.message {
+   margin-top: .25rem;
+   font-size: .75rem;
+   font-weight: 295;
+   flex-wrap: wrap;
+   color:rgb(230, 100, 100);
+}
 

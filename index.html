@@ -36,35 +36,40 @@
 						<div>
 							<label for="first-name">First Name</label>
 							<input type="text" name="first-name" id="first-name" required autofocus/>
+                     <div class="message">Enter first name</div>
 						</div>
 						<div>
 							<label for="last-name">Last Name</label>
 							<input type="text" name="last-name" id="last-name" required />
+                     <div class="message">Enter last name</div>
 						</div>
 					</div>
 					<div class="second-row">
 						<div>
 							<label for="email">Email</label>
 							<input type="email" name="email" id="email" required />
+                     <div class="message">Enter email address</div>
 						</div>
 						<div>
 							<label for="number">Mobile Number</label>
 							<input type="tel" name="number" id="number" required />
-							<div id="error-number"></div>
+							<div class="message">Enter mobile number</div>
 						</div>
 					</div>
 					<div class="third-row">
 						<div>
 							<label for="password">Password</label>
 							<input type="password" name="password" id="password" required />
+                     <div class="message">Password must contain at least 8 <br>characters</div>
 						</div>
 						<div>
 							<label for="confirm-password">Confirm Password</label>
 							<input type="password" name="confirm-password" id="confirm-password" required />
+                     <div class="message">Those passwords didn’t match. <br> Try again.</div>
 						</div>
 					</div>
-                  <input type="checkbox" name="accept-terms-conditions" id="checkbox" required checked />
-                  <label for="checkbox">I Accept the <a href="">Terms & Conditions</a></label>
+               <input type="checkbox" name="accept-terms-conditions" id="checkbox" required checked />
+               <label for="checkbox">I Accept the <a href="">Terms & Conditions</a></label>
                <input type="submit" value="Create Account" />
 				</form>
 				<footer>Copyright 2030. Company Inc ltd</footer>
