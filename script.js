@@ -11,10 +11,10 @@ const numberError = document.querySelector("#number + .message");
 const passwordError = document.querySelector("#password + .message");
 const confirmPasswordError = document.querySelector("#confirm-password + .message");
 const submit = document.querySelector("#submit");
+const form = document.querySelector("form");
 
 error(firstName, firstNameError);
 error(lastName, lastNameError);
-error(email, emailError);
 error(number, numberError);
 error(password, passwordError);
 
@@ -35,12 +35,28 @@ function error(input, message) {
 		if (!input.value.trim().length) {
          message.classList.add("show");
       } 
-
-      if (!email.value.includes("@.")) {
-         emailError.classList.add("show");
-      }
 	});
 }
+
+email.addEventListener("input", () => {
+   if (email.value.includes("@")) {
+      emailError.classList.remove("show");
+   }
+});
+
+email.addEventListener("blur", () => {
+   if (!email.value.includes("@")) {
+      emailError.classList.add("show");
+   }
+});
+
+form.addEventListener("submit", (e) => {
+   e.preventDefault();
+
+   if (password.value !== confirmPassword.value) {
+      confirmPasswordError.classList.add("show");
+   }
+})
 
 const leftContent = document.querySelector(".left-content");
 const rightContent = document.querySelector(".right-content");

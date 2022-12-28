@@ -166,7 +166,7 @@ input[type="submit"]:hover {
    background-color: rgba(230, 100, 100, 0.897);
 }
 
-input[type="submit"]:focus {
+input[type="submit"]:active {
    background-color: rgba(230, 100, 100, 0.726);
 }
 label {
