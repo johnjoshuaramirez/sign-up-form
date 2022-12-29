@@ -56,6 +56,32 @@ form.addEventListener("submit", (e) => {
    if (password.value !== confirmPassword.value) {
       confirmPasswordError.classList.add("show");
    }
+
+   if (password.value.trim().length < 8) {
+         passwordError.classList.add("show");
+      } 
+})
+
+submit.addEventListener("click", () => {
+   if (password.value.trim().length < 8) {
+      passwordError.classList.add("show");
+   } 
+
+   if (firstName.value.trim().length === 0) {
+      firstNameError.classList.add("show");
+   } 
+   
+   if (lastName.value.trim().length === 0) {
+      lastNameError.classList.add("show");
+   } 
+   
+   if (!email.value.trim()) {
+      emailError.classList.add("show");
+   }
+   
+   if (!number.value.trim()) {
+      numberError.classList.add("show");
+   }
 })
 
 const leftContent = document.querySelector(".left-content");
