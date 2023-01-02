@@ -130,3 +130,6 @@ window.addEventListener("load", () => {
 	createArrows("up-arrow", "up-arrow-group");
 	createArrows("right-arrow", "right-arrow-group");
 });
+
+// add validaton via constraint api see docs
+// change error colors to orange 
